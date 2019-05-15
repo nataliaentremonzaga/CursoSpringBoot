@@ -1,0 +1,30 @@
+package com.atsistemas.curso.seguridad;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+public class ConfiguracionSeguridad extends WebSecurityConfigurerAdapter {
+
+	@Override
+	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		auth.inMemoryAuthentication()
+			.withUser("Natalia").password("natalia").roles("USER","ADMIN").disabled(false)
+		.and()
+			.withUser("laura").password("laura").roles("USER")
+		.and()
+			.passwordEncoder(passwordEncoder);
+	
+	}
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception {
+		// TODO Auto-generated method stub
+		super.configure(http);
+	}
+
+	
+	
+}

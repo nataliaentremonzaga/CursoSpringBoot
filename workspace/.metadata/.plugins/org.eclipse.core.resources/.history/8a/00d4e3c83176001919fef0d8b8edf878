@@ -1,0 +1,44 @@
+package com.atsistemas.curso.tiempo.bussiness;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+import com.atsistemas.curso.tiempo.dto.PrediccionResponse;
+import com.atsistemas.curso.tiempo.dto.UbicacionRequest;
+
+@Component
+public class RestTemplateClienteDarkSkyApi implements ClienteDarkSkyApi {
+
+////	yml: darksky:
+////			api:
+////				url: https://api.darksky.net/forecast
+////	properties: darksky.api.url:https://api.darksky.net/forecast
+//	
+//	@Value("${darksky.api.url:https://api.darksky.net/forecast}") //nos permite leer de forma directa el yml o properties
+//	private String url;
+//	
+//	@Value("${darksky.api.key:7546f54c1c0561c1be0212d91d7f0ba4}") //nos permite leer de forma directa el yml o properties
+//	private String apiKey;
+
+	@Autowired
+	private DarkSkyProperties darkSkyProperties;
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@Override
+	public PrediccionResponse obtenerPrediccion(UbicacionRequest ubicacionRequest) {
+
+		String url= 
+				darkSkyProperties.getUrl() + "/" + 
+				darkSkyProperties.getApiKey() + "/"+  
+				ubicacionRequest.getLatitud() + "," + 
+				ubicacionRequest.getLongitud();
+		
+		restTemplate.getForEntity(url, PrediccionResponse.class);
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.atsistemas.curso.tiempo.bussiness;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
+
+import com.atsistemas.curso.tiempo.dto.PrediccionResponse;
+import com.atsistemas.curso.tiempo.dto.UbicacionRequest;
+
+@Component
+public class RestTemplateClienteDarkSkyApi implements ClienteDarkSkyApi {
+
+	@Autowired
+	private DarkSkyProperties darkSkyProperties;
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@Override
+	public PrediccionResponse obtenerPrediccion(UbicacionRequest ubicacionRequest) throws RestClientException, URISyntaxException {
+
+		String url= 
+				darkSkyProperties.getUrl() + "/" + 
+				darkSkyProperties.getApiKey() + "/"+  
+				ubicacionRequest.getLatitud() + "," + 
+				ubicacionRequest.getLongitud();
+		
+		restTemplate.getForEntity(new URI(url), PrediccionResponse.class);
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.atsistemas.curso.tiempo.dto;
+
+public class PrediccionDarkSkyResponse {
+
+}
