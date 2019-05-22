@@ -1692,3 +1692,267 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:23:46.926
+!MESSAGE Preparing classpath changed notification 09-SpringWebMvc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:23:46.967
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:23:46.985
+!MESSAGE classpath=30 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:23:47.019
+!MESSAGE executing callback sts4.classpath.cWccrztp 09-SpringWebMvc false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:23:47.151
+!MESSAGE executing callback sts4.classpath.cWccrztp SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-16 15:23:48.622
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-05-16 15:23:48.652
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:44.690
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cWccrztp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:44.706
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.cWccrztp
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:44.716
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:44.728
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.cWccrztp => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.851
+!MESSAGE Boot LS startup time from start to initialized: 4706ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.877
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jZMutCbt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.893
+!MESSAGE subscribing to classpath changes: sts4.classpath.jZMutCbt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.908
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.919
+!MESSAGE subsribers = [sts4.classpath.jZMutCbt]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.930
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.939
+!MESSAGE project 01-HolaMundoWeb ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.949
+!MESSAGE Preparing classpath changed notification 01-HolaMundoWeb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.957
+!MESSAGE project 03-DataJpa ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.965
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.974
+!MESSAGE project 04-DataMongo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.982
+!MESSAGE project 05-EjercicioApiTiempo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:54.995
+!MESSAGE classpath=69 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.001
+!MESSAGE project 05-EjercicioMongo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.011
+!MESSAGE executing callback sts4.classpath.jZMutCbt 01-HolaMundoWeb false 69
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.019
+!MESSAGE project 06-ConsumidorAMQP ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.035
+!MESSAGE project 06-ProductorAMQP ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.052
+!MESSAGE project 07-Seguridad ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.064
+!MESSAGE project 08-EjercicioApiTiempo-v2-Persistencia ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.078
+!MESSAGE project 08-EjercicioApiTiempov2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.095
+!MESSAGE project 09-SpringWebMvc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.103
+!MESSAGE project Servers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.117
+!MESSAGE project Servers SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.131
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.143
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jZMutCbt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.150
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.163
+!MESSAGE Preparing classpath changed notification 09-SpringWebMvc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.176
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.185
+!MESSAGE classpath=30 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.202
+!MESSAGE executing callback sts4.classpath.jZMutCbt 09-SpringWebMvc false 30
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.231
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.244
+!MESSAGE Preparing classpath changed notification 08-EjercicioApiTiempov2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.251
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.265
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.279
+!MESSAGE executing callback sts4.classpath.jZMutCbt 08-EjercicioApiTiempov2 false 78
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.357
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.411
+!MESSAGE Preparing classpath changed notification 08-EjercicioApiTiempo-v2-Persistencia
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.434
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.466
+!MESSAGE classpath=59 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.500
+!MESSAGE executing callback sts4.classpath.jZMutCbt 08-EjercicioApiTiempo-v2-Persistencia false 59
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.528
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.546
+!MESSAGE Preparing classpath changed notification 07-Seguridad
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.566
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.618
+!MESSAGE classpath=69 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.657
+!MESSAGE executing callback sts4.classpath.jZMutCbt 07-Seguridad false 69
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.677
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.716
+!MESSAGE Preparing classpath changed notification 06-ProductorAMQP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.731
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.743
+!MESSAGE classpath=71 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.758
+!MESSAGE executing callback sts4.classpath.jZMutCbt 06-ProductorAMQP false 71
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.797
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.809
+!MESSAGE Preparing classpath changed notification 06-ConsumidorAMQP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.818
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.828
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.844
+!MESSAGE executing callback sts4.classpath.jZMutCbt 06-ConsumidorAMQP false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.878
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.939
+!MESSAGE Preparing classpath changed notification 05-EjercicioMongo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.950
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.978
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:55.997
+!MESSAGE executing callback sts4.classpath.jZMutCbt 05-EjercicioMongo false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.011
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.018
+!MESSAGE Preparing classpath changed notification 05-EjercicioApiTiempo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.027
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.040
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.060
+!MESSAGE executing callback sts4.classpath.jZMutCbt 05-EjercicioApiTiempo false 78
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.091
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.100
+!MESSAGE Preparing classpath changed notification 04-DataMongo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.108
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.116
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.123
+!MESSAGE executing callback sts4.classpath.jZMutCbt 04-DataMongo false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.138
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.152
+!MESSAGE Preparing classpath changed notification 03-DataJpa
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.161
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.169
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.190
+!MESSAGE executing callback sts4.classpath.jZMutCbt 03-DataJpa false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-05-16 15:24:56.213
+!MESSAGE executing callback sts4.classpath.jZMutCbt SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2019-05-16 16:19:00.380
+!MESSAGE Field value processing of @ConfigurationProperty meta-data is not supported

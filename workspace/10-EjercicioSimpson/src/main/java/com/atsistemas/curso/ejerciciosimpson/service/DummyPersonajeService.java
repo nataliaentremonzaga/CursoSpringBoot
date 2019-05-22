@@ -1,0 +1,54 @@
+package com.atsistemas.curso.ejerciciosimpson.service;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.springframework.stereotype.Service;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto;
+
+@Service
+public class DummyPersonajeService implements PersonajeService {
+
+	@Override
+	public void alta(PersonajeDto personaje) {
+
+	}
+
+	@Override
+	public int borrar(String nombre) {
+		return 1;
+	}
+
+	@Override
+	public int actualizar(PersonajeDto personaje) {
+		return 1;
+	}
+
+	@Override
+	public PersonajeDto consultaPorNombre(String nombre) {
+		return new PersonajeDto("Bart", "Simpson", "Homer", 9);
+	}
+
+	@Override
+	public Collection<PersonajeDto> consultaTodos() {
+		PersonajeDto[] personaje = new PersonajeDto[] { new PersonajeDto("Bart", "Simpson", "Homer", 9),
+				new PersonajeDto("Homer", "Simpson", "Abraham", 40) };
+		
+		return Arrays.asList(personaje);
+	}
+
+	@Override
+	public Collection<PersonajeDto> consultaPorApellido(String apellido) {
+		PersonajeDto[] personaje = new PersonajeDto[] { new PersonajeDto("Bart", "Simpson", "Homer", 9),
+				new PersonajeDto("Homer", "Simpson", "Abraham", 40) };
+		
+		return Arrays.asList(personaje);
+	}
+
+	@Override
+	public PersonajeDto consultaPadrePorNombre(String nombre) {
+		return new PersonajeDto("Bart", "Simpson", "Homer", 9);
+	}
+
+}
