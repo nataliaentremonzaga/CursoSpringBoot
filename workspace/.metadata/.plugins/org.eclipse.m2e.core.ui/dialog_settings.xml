@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace"/>
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\15-ServidorRegistroDescubrimiento-MicroservicioHolaMundo"/>
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\15-ServidorRegistroDescubrimiento"/>
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\12-ServicioConfiguracion-Cliente"/>
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\12-ServicioConfiguracion"/>
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\08-EjercicioApiTiempov2"/>
 			<item value="C:\Users\nentremonzaga\Documents\CursoSpring\workspace\06-ProductorAMQP"/>
 			<item value="C:\Users\nentremonzaga\Documents\CursoSpring\workspace\06-ConsumidorAMQP"/>
 			<item value="C:\Users\nentremonzaga\Documents\CursoSpring\workspace"/>
@@ -22,6 +35,69 @@
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\nentremonzaga\Documents\CursoSpringBoot\workspace\08-EjercicioApiTiempo-v2-Persistencia"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.atsistemas.curso"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="09-SpringWebMvc"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 </section>
