@@ -2,26 +2,23 @@ package com.atsistemas.curso.datamongo;
 
 import org.springframework.data.annotation.Id;
 
-
 public class Persona {
 
 	@Id
 	private Long id;
 	
 	private String nombre;
-	private String apellidos;
 
 	public Persona(Long id, String nombre) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 	}
-	
+
 	public Persona() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-	/* Getter and Setter*/
 
 	public Long getId() {
 		return id;
@@ -39,12 +36,9 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
-	public String getApellidos() {
-		return apellidos;
-	}
-
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+	@Override
+	public String toString() {
+		return "Persona [id=" + id + ", nombre=" + nombre + "]";
 	}
 	
 	

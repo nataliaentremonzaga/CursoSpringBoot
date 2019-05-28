@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.ejercicioapitiempo.dto.PrediccionResponse"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.data.annotation.Id"/>
-    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
-    <fullyQualifiedTypeName name="org.springframework.data.mongodb.repository.MongoRepository"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.dto.UbicacionRequest"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.service.TiempoService"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.repository.PrediccionRepository"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.dto.PrediccionResponse"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.entities.PrediccionFactory"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.atsistemas.curso.tiempo.entities.Prediccion"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -46,18 +35,29 @@
     <fullyQualifiedTypeName name="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.utils.URI"/>
     <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.dto.PersonajesDto"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.service.PersonajeService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.dto.DeleteOperationResponse"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+    <fullyQualifiedTypeName name="org.springframework.hateoas.mvc.ControllerLinkBuilder"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.controller.PersonajeRestController"/>
+    <fullyQualifiedTypeName name="com.atsistemas.curso.ejerciciosimpson.service.PersonajeService"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.sun.source.doctree.LinkTree"/>
+    <fullyQualifiedTypeName name="org.springframework.hateoas.Resource"/>
+    <fullyQualifiedTypeName name="org.springframework.hateoas.ResourceSupport"/>
 </qualifiedTypeNameHistroy>

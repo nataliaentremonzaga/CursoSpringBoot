@@ -6,11 +6,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "PERSONAS") //Para poner el nombre a la tabla sino pondra el nombre de la clase
+@Table(name = "PERSONAS")
 public class Persona {
 
 	@Id
-	@Column(name= "Identificador") //Para poner el nombre a una columna sino pondra el nombre id
+	@Column(name = "identificador")
 	private Long id;
 	
 	private String nombre;
@@ -20,12 +20,11 @@ public class Persona {
 		this.id = id;
 		this.nombre = nombre;
 	}
-	
+
 	public Persona() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-	/* Getter and Setter*/
 
 	public Long getId() {
 		return id;
@@ -41,6 +40,11 @@ public class Persona {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [id=" + id + ", nombre=" + nombre + "]";
 	}
 	
 	

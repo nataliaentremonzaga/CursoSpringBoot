@@ -24,11 +24,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars.bowergithub.jquery/jquery-dist -->
 		<dependency>
 			<groupId>org.webjars.bowergithub.jquery</groupId>
 			<artifactId>jquery-dist</artifactId>
-			<version>3.4.1</version>
+			<version>3.4.0</version>
 		</dependency>
 
 		<dependency>
@@ -36,12 +40,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>

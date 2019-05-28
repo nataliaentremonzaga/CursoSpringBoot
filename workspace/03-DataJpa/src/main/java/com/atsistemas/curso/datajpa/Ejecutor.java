@@ -14,23 +14,28 @@ public class Ejecutor implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		personaRepository.save(new Persona (1L, "Victor"));
-		personaRepository.save(new Persona (2L, "Laura"));
-		personaRepository.save(new Persona (3L, "Cristina"));
 		
+		personaRepository.save(new Persona(1l, "Victor"));
+		personaRepository.save(new Persona(2l, "Laura"));
+		personaRepository.save(new Persona(3l, "Cristina"));
 		
-		Persona victor= personaRepository.getOne(2L);
+		//Error de Lazy 
+		//Persona victor = personaRepository.getOne(1l);
+		
+		Persona victor = personaRepository.findById(1l).get();
+		
 		System.out.println(victor);
 		
-		List<Persona> laura = personaRepository.findByNombre("Laura");
-		laura.forEach(p -> System.out.println(p));
+		List<Persona> lauras = personaRepository.findByNombre("Laura");
 		
-		List<Persona> cristina = personaRepository.findByNombre("Cristina");
-		cristina.forEach(p -> System.out.println(p));
+		lauras.forEach(p -> System.out.println(p));
+		
+		List<Persona> cristinas = personaRepository.findByNombre("Cristina");
+		
+		cristinas.forEach(p -> System.out.println(p));
+		
 		
 		
 	}
 
-	
 }
