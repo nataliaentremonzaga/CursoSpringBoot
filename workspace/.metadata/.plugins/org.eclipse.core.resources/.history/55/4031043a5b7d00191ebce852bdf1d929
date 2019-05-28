@@ -1,0 +1,9 @@
+package com.atsistemas.curso.lombok;
+
+@Data
+public class Persona {
+
+	private long id;
+	private String nombre;
+	private String apellidos;
+}

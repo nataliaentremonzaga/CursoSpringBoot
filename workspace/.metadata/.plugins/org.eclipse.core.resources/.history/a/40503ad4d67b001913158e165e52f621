@@ -1,0 +1,26 @@
+package com.atsistemas.curso.ejerciciosimpson.dto;
+
+public class DeleteOperationResponse {
+
+	private int numeroRecursosAfectados;
+
+	public int getNumeroRecursosAfectados() {
+		return numeroRecursosAfectados;
+	}
+
+	public void setNumeroRecursosAfectados(int numeroRecursosAfectados) {
+		this.numeroRecursosAfectados = numeroRecursosAfectados;
+	}
+
+	public DeleteOperationResponse(int numeroRecursosAfectados) {
+		super();
+		this.numeroRecursosAfectados = numeroRecursosAfectados;
+	}
+
+	public DeleteOperationResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

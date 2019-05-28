@@ -1,0 +1,65 @@
+package com.atsistemas.curso.ejerciciosimpson.controller;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto;
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajesDto;
+import com.atsistemas.curso.ejerciciosimpson.entities.PersonajeEntidad;
+import com.atsistemas.curso.ejerciciosimpson.service.PersonajeService;
+
+@RestController
+@RequestMapping("/personajes")
+public class PersonajeController {
+
+	@Autowired
+	private PersonajeService personajeService;
+	
+	@GetMapping("{id}")
+	public ResponseEntity<PersonajeDto> consultar(@PathVariable("id") String id) throws MalformedURLException {
+		
+		PersonajeEntidad personaje = personajesServicie.buscarPersonajePorID(id);
+		
+		return new ResponseEntity<PersonajeDto>(
+				new PersonajeDto(
+						personaje.getNombre(),
+						personaje.getApellidos(),
+						new URL("http://localhost:8080/personajes/" + personaje.getPadre().getId())),
+						
+				HttpStatus.OK);
+	}
+	
+	@GetMapping()
+	public ResponseEntity<List<PersonajeDto>> consultar() {
+		
+		List<PersonajeEntidad> personajes = personajesServicie.buscarPersonajes();
+		
+		List<PersonajeDto> collect = personajes.stream().map(personajeEntidad -> 
+			{
+				try {
+					return new PersonajesDto(
+								personajeEntidad.getNombre(),
+								personajeEntidad.getApellidos(),
+								new URL("http://localhost:8080/personajes/" + personajeEntidad.getPadre().getId()));
+				} catch (MalformedURLException e) {
+					e.printStackTrace();
+					return null;
+				}
+			}
+		).collect(Collectors.toList());
+		
+		return new ResponseEntity<List<PersonajesDto>>(
+				collect,
+				HttpStatus.OK);
+	}
+}

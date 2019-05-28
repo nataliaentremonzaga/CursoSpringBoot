@@ -1,0 +1,44 @@
+package com.atsistemas.curso.ejerciciosimpson.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.RecursosAfectadosOperationResponse;
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto;
+import com.atsistemas.curso.ejerciciosimpson.service.PersonajeService;
+
+@RestController
+@RequestMapping("/Personaje")
+public class PersonajeRestController {
+
+	@Autowired
+	private PersonajeService personajeService;
+
+	@PutMapping
+	public ResponseEntity<Void> alta(@RequestBody PersonajeDto personajeDto) {
+		personajeService.alta(personajeDto);
+		return new ResponseEntity<Void>(HttpStatus.CREATED);
+	}
+
+	@DeleteMapping("/{nombre}")
+	public ResponseEntity<RecursosAfectadosOperationResponse> borrar(@PathVariable String nombre) {
+		int numeroRecursosAfectados = personajeService.borrar(nombre);
+		return new ResponseEntity<RecursosAfectadosOperationResponse>(
+				new RecursosAfectadosOperationResponse(numeroRecursosAfectados), HttpStatus.OK);
+	}
+
+	@PutMapping
+	public ResponseEntity<RecursosAfectadosOperationResponse> actualizar(@RequestBody PersonajeDto personajeDto) {
+		int numeroRecursosAfectados = personajeService.actualizar(personajeDto);
+		return new ResponseEntity<RecursosAfectadosOperationResponse>(
+				new RecursosAfectadosOperationResponse(numeroRecursosAfectados), HttpStatus.OK);
+	}
+
+}

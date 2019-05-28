@@ -1,0 +1,31 @@
+package com.atsistemas.curso.ejerciciosimpson.service;
+
+import java.util.Collection;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajesDto;
+
+public interface PersonajeService {
+
+	//retornamos void porque no se autogenera nada en la base de datos.
+	void alta(PersonajesDto personaje);
+	
+	
+	//Retornamos int para tener conciencia de a cuantos registros a afectado la operacion.
+	int borrar(String nombre);
+	
+	//Actualizacion del objeto completo
+	int actualizar(PersonajesDto personaje);
+	
+	//Consulta por la PK
+	PersonajesDto consultaPorNombre(String nombre);
+	
+	//Consulta de todos sin orden
+	Collection<PersonajesDto> consultaTodos();
+	
+	Collection<PersonajesDto> consultaPorApellido(String apellido);
+	
+	PersonajesDto consultaPadrePorNombre(String nombre);
+	
+	
+	
+}

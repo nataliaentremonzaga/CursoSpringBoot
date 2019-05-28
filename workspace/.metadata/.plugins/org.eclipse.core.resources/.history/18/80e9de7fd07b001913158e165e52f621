@@ -1,0 +1,16 @@
+package com.atsistemas.curso.ejerciciosimpson.dto;
+
+import java.util.Collection;
+
+
+public class PersonajesDto {//DTO es lo que le voy a deovlver o a enviar como dato al servicio
+
+	private String nombre;
+	private String apellidos;
+	private String padre;
+	private String madre;
+	private Collection<String> hijos;
+	private int edad;
+	
+	
+}

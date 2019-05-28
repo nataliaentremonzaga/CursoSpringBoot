@@ -1,0 +1,54 @@
+package com.atsistemas.curso.ejerciciosimpson.service;
+
+import java.util.Collection;
+
+import org.springframework.stereotype.Service;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto;
+
+@Service
+public class DummyPersonajeService implements PersonajeService {
+
+	@Override
+	public void alta(PersonajeDto personaje) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int borrar(String nombre) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int actualizar(PersonajeDto personaje) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public PersonajeDto consultaPorNombre(String nombre) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<PersonajeDto> consultaTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<PersonajeDto> consultaPorApellido(String apellido) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PersonajeDto consultaPadrePorNombre(String nombre) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

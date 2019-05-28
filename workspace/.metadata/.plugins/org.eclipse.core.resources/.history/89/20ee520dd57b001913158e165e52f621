@@ -1,0 +1,26 @@
+package com.atsistemas.curso.ejerciciosimpson.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.atsistemas.curso.ejerciciosimpson.dto.PersonajeDto;
+import com.atsistemas.curso.ejerciciosimpson.service.PersonajeService;
+
+@RestController
+@RequestMapping("/Personaje")
+public class PersonajeRestController {
+
+	@Autowired
+	private PersonajeService personajeService;
+	
+	@PutMapping
+	public ResponseEntity<Void> alta (PersonajeDto personajeDto) {
+		personajeService.alta(personajeDto);
+		return null;
+	}
+
+
+}
